@@ -1,13 +1,11 @@
-import ZojaxLogo from "../components/ZojaxLogo";
-import DivideLine from "../components/DivideLine";
+import Header from "../sections.jsx/Header";
 import Cards from "../components/Cards";
 import Partners from "../components/Partners";
 
 const Home = () => {
   return (
     <div className="w-full">
-      <ZojaxLogo />
-      <DivideLine text={""} />
+      <Header />
       <div className="w-full">
         <div className="w-[50%] flex flex-col justify-center items-center">
           <div>Copy Trading</div>
