@@ -1,9 +1,9 @@
-import GuidePDF from "../assets/Presentation.pdf";
+import GuidePDF from "../assets/Presentation.mp4";
 
 const CopyTradingText = () => {
   return (
     <div className="2xl:w-[50%] w-[100%] flex flex-col z-[11] items-center">
-      <p className="xl:text-[56px] md:text-[40px] text-[40px] text-center xl:text-left xl:mt-10 text-[white] font-bold drop-shadow-[0_5px_2px_rgba(0,0,0,0.75)]  ">
+      <p className="2xl:ml-[100px] xl:ml-[50px] px-10 xl:text-[40px] md:text-[40px] text-[30px] text-center xl:text-left xl:mt-10 text-white font-bold drop-shadow-[0_5px_2px_rgba(0,0,0,0.75)]">
         Dogs Lovers Cryptocurrency Investment Fund
       </p>
       <p className="2xl:ml-[100px] xl:ml-[50px] indent-1 xl:w-[100%] lg:w-[70%] sm:w-[80%] w-[90%] xl:text-[20px] md:text-[18px] sm:text-[15px] text-[13px]  text-left xl:text-left mt-10 px-4 text-[white]">
@@ -17,11 +17,11 @@ const CopyTradingText = () => {
         </div>
         <div>
           View our{" "}
-          <a href={GuidePDF} className="font-bold">
+          <a href={GuidePDF} className="font-black">
             presentation
           </a>{" "}
           and chat here with Dean Powers, the Founder and CEO of{" "}
-          <a href="https://Zojax.com" className="font-bold">
+          <a href="https://Zojax.com" className="font-black">
             Zojax Group
           </a>
           , LLC.
