@@ -2,11 +2,11 @@ import GuidePDF from "../assets/Presentation.pdf";
 
 const CopyTradingText = () => {
   return (
-    <div className="2xl:w-[45%] w-[100%] flex flex-col z-[11] items-center">
+    <div className="2xl:w-[50%] w-[100%] flex flex-col z-[11] items-center">
       <p className="xl:text-[56px] md:text-[40px] text-[40px] text-center xl:text-left xl:mt-10 text-[white] font-bold drop-shadow-[0_5px_2px_rgba(0,0,0,0.75)]  ">
         Copy Trading
       </p>
-      <p className="indent-1 xl:w-[100%] lg:w-[70%] sm:w-[80%] w-[90%] xl:text-[20px] md:text-[18px] sm:text-[15px] text-[13px]  text-left xl:text-left mt-10 px-4 text-[white]">
+      <p className="2xl:ml-[100px] xl:ml-[50px] indent-1 xl:w-[100%] lg:w-[70%] sm:w-[80%] w-[90%] xl:text-[20px] md:text-[18px] sm:text-[15px] text-[13px]  text-left xl:text-left mt-10 px-4 text-[white]">
         <div>
           The Dog Lovers CryptoCurrency Investment Fund if for small investors
           to invest in Dog Meme Coins and. have a custom Bot make profitable
