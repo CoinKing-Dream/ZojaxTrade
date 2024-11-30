@@ -30,7 +30,7 @@ const CopyTradingText = () => {
           The minimum investment is $25 and Fund Profits distributed daily.
         </div>
       </p>
-      <div className="mt-10 focus:outline-none xl:w-[400px] text-center xl:text-left flex xl:flex-row flex-col justify-between items-center gap-10">
+      <div className="mt-10 focus:outline-none xl:w-[400px] text-center xl:text-left flex xl:flex-row flex-col justify-between items-center sm:gap-10 gap-5 ">
         <a href="https://crypto.zojax.com/pro/auth/register/">
           <button className="sign-up-style">Sign Up</button>
         </a>
