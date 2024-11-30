@@ -2,9 +2,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper/modules";
 import "swiper/swiper-bundle.css";
 // import 'swiper/css/effect-cards';
-import firCard from "../assets/cards/1.png";
-// import secCard from "../../assets/cards/2.png";
-// import thirdCard from "../../assets/cards/3.png";
+import firstCard from "../assets/cards/1.png";
+import secondCard from "../assets/cards/2.png";
+import thirdCard from "../assets/cards/3.png";
+import fourthCard from "../assets/cards/4.png";
+import fifthCard from "../assets/cards/5.png";
 
 const Cards = () => {
   return (
@@ -17,20 +19,20 @@ const Cards = () => {
           className=""
         >
           <SwiperSlide className="rounded-[20px]">
-            <img src={firCard} />
+            <img src={firstCard} />
           </SwiperSlide>
           <SwiperSlide className="rounded-[20px]">
-            <img src={firCard} />
+            <img src={secondCard} />
           </SwiperSlide>
           <SwiperSlide className="rounded-[20px]">
-            <img src={firCard} />
+            <img src={thirdCard} />
           </SwiperSlide>
-          {/* <SwiperSlide>
-          <img src={secCard} />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={thirdCard} />
-        </SwiperSlide> */}
+          <SwiperSlide className="rounded-[20px]">
+            <img src={fourthCard} />
+          </SwiperSlide>
+          <SwiperSlide className="rounded-[20px]">
+            <img src={fifthCard} />
+          </SwiperSlide>
         </Swiper>
       </div>
     </div>
