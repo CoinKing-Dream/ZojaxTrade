@@ -1,48 +1,54 @@
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
-import { EffectCards } from "swiper/modules";
+import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCards, Navigation } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-// import 'swiper/css/effect-cards';
+import 'swiper/css/navigation';
+import "swiper/css/effect-cards";
 import firstCard from "../assets/cards/1.png";
 import secondCard from "../assets/cards/2.png";
 import thirdCard from "../assets/cards/3.png";
 import fourthCard from "../assets/cards/4.png";
 import fifthCard from "../assets/cards/5.png";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-
 const Cards = () => {
-  const swiper = useSwiper();
-
+  const [currentSlide, setCurrentSlide] = useState(0)
   return (
-    <div className="flex xl:justify-end justify-center xl:pt-28 2xl:w-[50%] w-full">
-      {/* <button className="cursor-pointer mr-10" onClick={() => swiper.slideNext()}>A</button> */}
-      <div className="lg:w-[500px] md:w-[450px] w-[80vw]">
+    <div className="relative flex xl:justify-end justify-center xl:pt-28 pt-[30px] 2xl:w-[50%] w-full z-100">
+      <div className="2xl:w-[500px] xl:w-[400px] lg:w-[500px] md:w-[450px] sm:w-[70vw] w-[65vw]">
         <Swiper
           effect={"cards"}
           grabCursor={true}
-          modules={[EffectCards]}
+          modules={[EffectCards, Navigation]}
+          navigation={{
+            nextEl: ".swiper-button-next1",
+            prevEl: ".swiper-button-prev1",
+          }}
+          className="flex flex-row items-center"
+          onSlideChange={(swiper) => setCurrentSlide(swiper?.activeIndex)}
         >
-          <SwiperSlide className="rounded-[20px] border-[1px] border-blue-400 drop-shadow-[2px_3px_5px_rgba(200,200,200,0.85)]">
-            <img src={firstCard} />
+          <SwiperSlide className="rounded-[10px] sm:rounded-[20px] border-[1px] border-blue-400 drop-shadow-[2px_3px_5px_rgba(200,200,200,0.85)]">
+            <img src={firstCard} alt="First card" />
           </SwiperSlide>
-          <SwiperSlide className="rounded-[20px] border-[1px] border-blue-400 drop-shadow-[2px_3px_5px_rgba(200,200,200,0.85)]">
-            <img src={secondCard} />
+          <SwiperSlide className="rounded-[10px] sm:rounded-[20px] border-[1px] border-blue-400 drop-shadow-[2px_3px_5px_rgba(200,200,200,0.85)]">
+            <img src={secondCard} alt="Second card" />
           </SwiperSlide>
-          <SwiperSlide className="rounded-[20px] border-[1px] border-blue-400 drop-shadow-[2px_3px_5px_rgba(200,200,200,0.85)]">
-            <img src={thirdCard} />
+          <SwiperSlide className="rounded-[10px] sm:rounded-[20px] border-[1px] border-blue-400 drop-shadow-[2px_3px_5px_rgba(200,200,200,0.85)]">
+            <img src={thirdCard} alt="Third card" />
           </SwiperSlide>
-          <SwiperSlide className="rounded-[20px] border-[1px] border-blue-400 drop-shadow-[2px_3px_5px_rgba(200,200,200,0.85)]">
-            <img src={fourthCard} />
+          <SwiperSlide className="rounded-[10px] sm:rounded-[20px] border-[1px] border-blue-400 drop-shadow-[2px_3px_5px_rgba(200,200,200,0.85)]">
+            <img src={fourthCard} alt="Fourth card" />
           </SwiperSlide>
-          <SwiperSlide className="rounded-[20px] border-[1px] border-blue-400 drop-shadow-[2px_3px_5px_rgba(200,200,200,0.85)]">
-            <img src={fifthCard} />
+          <SwiperSlide className="rounded-[10px] sm:rounded-[20px] border-[1px] border-blue-400 drop-shadow-[2px_3px_5px_rgba(200,200,200,0.85)]">
+            <img src={fifthCard} alt="Fifth card" />
           </SwiperSlide>
+          <div className={`${currentSlide==0?"opacity-30":"opacity-100"} cursor-pointer flex justify-center items-center swiper-button-prev1 w-[25px] h-[25px] text-[25px] sm:w-[30px] sm:h-[30px] sm:text-[30px] rounded-full bg-gray-300 absolute top-[50%] right-[-100px] sm:right-[-120px] cursor-pointer mx-12 text-gray-800 z-10000`}>
+            &gt;
+          </div>
+          <div className={`${currentSlide==4?"opacity-30":"opacity-100"} cursor-pointer flex justify-center items-center swiper-button-next1 w-[25px] h-[25px] text-[25px] sm:w-[30px] sm:h-[30px] sm:text-[30px] rounded-full bg-gray-300 absolute top-[50%] left-[-100px] sm:left-[-120px] cursor-pointer mx-12 text-gray-800 z-10000`}>
+            &lt;
+          </div>
         </Swiper>
       </div>
-      {/* <button className="cursor-pointer ml-12 text-black" onClick={() => swiper.slidePrev()}>B</button> */}
     </div>
   );
 };
