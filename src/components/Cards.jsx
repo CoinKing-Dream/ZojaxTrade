@@ -18,19 +18,19 @@ const Cards = () => {
           modules={[EffectCards]}
           className=""
         >
-          <SwiperSlide className="rounded-[20px]">
+          <SwiperSlide className="rounded-[20px] border-[1px] border-blue-400">
             <img src={firstCard} />
           </SwiperSlide>
-          <SwiperSlide className="rounded-[20px]">
+          <SwiperSlide className="rounded-[20px] border-[1px] border-blue-400">
             <img src={secondCard} />
           </SwiperSlide>
-          <SwiperSlide className="rounded-[20px]">
+          <SwiperSlide className="rounded-[20px] border-[1px] border-blue-400">
             <img src={thirdCard} />
           </SwiperSlide>
-          <SwiperSlide className="rounded-[20px]">
+          <SwiperSlide className="rounded-[20px] border-[1px] border-blue-400">
             <img src={fourthCard} />
           </SwiperSlide>
-          <SwiperSlide className="rounded-[20px]">
+          <SwiperSlide className="rounded-[20px] border-[1px] border-blue-400">
             <img src={fifthCard} />
           </SwiperSlide>
         </Swiper>
