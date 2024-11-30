@@ -8,8 +8,8 @@ import firCard from "../assets/cards/1.png";
 
 const Cards = () => {
   return (
-    <div className="xl:place-items-end place-items-center xl:pt-28 2xl:w-[55%] w-[100%]">
-      <div className="lg:w-[500px] md:w-[450px] w-[70vw]">
+    <div className="flex xl:justify-end justify-center xl:pt-28 2xl:w-[55%] w-full">
+      <div className="lg:w-[500px] md:w-[450px] w-[85vw]">
         <Swiper
           effect={"cards"}
           grabCursor={true}
