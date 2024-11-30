@@ -10,7 +10,7 @@ const Partners = () => {
     <>
       <div className="w-full flex flex-col items-center md:mt-[100px] sm:mt-[70px] mt-[50px] mb-[10px]">
         <DivideLine text={"Partners"} />
-        <div className="flex flex-row items-center xl:gap-[200px] gap-10 justify-between my-5">
+        <div className="flex flex-row items-center xl:gap-[200px] sm:gap-10 gap-3 justify-between my-5">
           {logoList.map((item, idx) => (
             <img
               src={item}
