@@ -10,7 +10,7 @@ import fifthCard from "../assets/cards/5.png";
 
 const Cards = () => {
   return (
-    <div className="flex xl:justify-end justify-center xl:pt-28 2xl:w-[55%] w-full">
+    <div className="flex xl:justify-end justify-center xl:pt-28 2xl:w-[50%] w-full">
       <div className="lg:w-[500px] md:w-[450px] w-[85vw]">
         <Swiper
           effect={"cards"}
