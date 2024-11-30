@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="flex justify-center w-[100%]">
-      <div className="max-w-[1700px] w-[80%]">
+      <div className="max-w-[1700px] md:w-[80%] sm:w-[90%] w-[100%]">
         <Routes>
           <Route path="/" Component={Home} />
         </Routes>
