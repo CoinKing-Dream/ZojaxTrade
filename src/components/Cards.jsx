@@ -9,6 +9,10 @@ import secondCard from "../assets/cards/2.png";
 import thirdCard from "../assets/cards/3.png";
 import fourthCard from "../assets/cards/4.png";
 import fifthCard from "../assets/cards/5.png";
+import leftRedArrowImg from "../assets/left-red-arrow.png";
+import rightRedArrowImg from "../assets/right-red-arrow.png";
+import leftBrownArrowImg from "../assets/left-brown-arrow.png";
+import rightBrownArrowImg from "../assets/right-brown-arrow.png";
 
 const Cards = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -41,11 +45,11 @@ const Cards = () => {
           <SwiperSlide className="rounded-[10px] sm:rounded-[20px] border-[1px] border-blue-400 drop-shadow-[2px_3px_5px_rgba(200,200,200,0.85)]">
             <img src={fifthCard} alt="Fifth card" />
           </SwiperSlide>
-          <div className={`${currentSlide==4?"opacity-30":"opacity-100"} cursor-pointer flex justify-center items-center swiper-button-next1 w-[25px] h-[25px] text-[25px] sm:w-[30px] sm:h-[30px] sm:text-[30px] rounded-full bg-gray-300 absolute top-[50%] right-[-100px] sm:right-[-120px] cursor-pointer mx-12 text-gray-800 z-10000`}>
-            &gt;
+          <div className={`${currentSlide==4?"opacity-80":"opacity-100"} cursor-pointer flex justify-center items-center swiper-button-next1 absolute top-[50%] right-[-100px] sm:right-[-120px] cursor-pointer mx-12 z-10000`}>
+            <img src={currentSlide==4?rightBrownArrowImg:rightRedArrowImg} className="sm:w-[45px] sm:h-[15px] w-[35px] h-[10px]"/>
           </div>
-          <div className={`${currentSlide==0?"opacity-30":"opacity-100"} cursor-pointer flex justify-center items-center swiper-button-prev1 w-[25px] h-[25px] text-[25px] sm:w-[30px] sm:h-[30px] sm:text-[30px] rounded-full bg-gray-300 absolute top-[50%] left-[-100px] sm:left-[-120px] cursor-pointer mx-12 text-gray-800 z-10000`}>
-            &lt;
+          <div className={`${currentSlide==0?"opacity-80":"opacity-100"} cursor-pointer flex justify-center items-center swiper-button-prev1 absolute top-[50%] left-[-100px] sm:left-[-120px] cursor-pointer mx-12 z-10000`}>
+            <img src={currentSlide==0?leftBrownArrowImg:leftRedArrowImg} className="sm:w-[45px] sm:h-[15px] w-[35px] h-[10px]"/>
           </div>
         </Swiper>
       </div>
