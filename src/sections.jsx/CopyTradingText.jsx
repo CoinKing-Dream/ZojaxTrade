@@ -17,11 +17,11 @@ const CopyTradingText = () => {
         </div>
         <div>
           View our{" "}
-          <a href={GuidePDF} className="font-black">
+          <a href={GuidePDF}>
             presentation
           </a>{" "}
           and chat here with Dean Powers, the Founder and CEO of{" "}
-          <a href="https://Zojax.com" className="font-black">
+          <a href="https://Zojax.com">
             Zojax Group
           </a>
           , LLC.
