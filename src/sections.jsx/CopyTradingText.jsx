@@ -17,11 +17,11 @@ const CopyTradingText = () => {
         </div>
         <div>
           View our{" "}
-          <a href={GuidePDF}>
+          <a href={GuidePDF} className="underline decoration-dotted underline-offset-4 font-normal">
             presentation
           </a>{" "}
           and chat here with Dean Powers, the Founder and CEO of{" "}
-          <a href="https://Zojax.com">
+          <a href="https://www.zojax.com" className="underline decoration-dotted underline-offset-4 font-normal">
             Zojax Group
           </a>
           , LLC.

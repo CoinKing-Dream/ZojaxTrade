@@ -10,7 +10,7 @@ const Home = () => {
       <Header />
       <div className="w-full flex xl:flex-row xl:items-center xl:justify-around flex-col xl:mt-[10px] sm:mt-[50px] mt-[40px] gap-5">
         <img
-          className="absolute top-0 left-0 w-[100vw] h-[100%]"
+          className="absolute top-0 left-0 w-[100vw] h-[100%] z-[-100]"
           src={GradientImg}
         />
         <CopyTradingText />
