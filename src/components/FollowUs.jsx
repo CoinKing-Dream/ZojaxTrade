@@ -4,7 +4,7 @@ const FollowUs = () => {
     // const ImgList = [YouTubeImg, TwitterImg, FaceBookImg]
     const ImgList = [FaceBookImg]
     return (
-        <div className="flex justify-center md:w-[160px] sm:w-[140px] w-[120px] md:h-[60px] sm:h-[50px] h-[37px] relative text-white bg-gradient-to-r from-gray-100 to-transparent p-1 rounded-[30px]">
+        <a href="https://www.facebook.com/profile.php?id=61569310988457" target="_blank" className="cursor-pointer flex justify-center md:w-[160px] sm:w-[140px] w-[120px] md:h-[60px] sm:h-[50px] h-[37px] relative text-white bg-gradient-to-r from-gray-100 to-transparent p-1 rounded-[30px]">
             <div className="relative flex items-center rounded-[30px] w-full h-full">
                 <a className="cursor-pointer absolute left-[0px]" href="#">
                     {
@@ -21,7 +21,7 @@ const FollowUs = () => {
                     Follow Us
                 </div>
             </div>
-        </div>
+        </a>
     )
 }
 
