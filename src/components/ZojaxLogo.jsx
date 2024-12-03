@@ -7,7 +7,7 @@ const ZojaxLogo = () => {
         <a href="#">
           <img
             src={zojaxLogo}
-            className="lg:w-[250px] md:w-[200px] sm:w-[150px] w-[100px]"
+            className="lg:w-[250px] md:w-[200px] sm:w-[150px] w-[130px]"
             alt="Zojax Logo"
           />
         </a>
