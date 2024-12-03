@@ -1,42 +1,42 @@
 const fundCoins = [
   {
     name: "BTC",
-    order: "Long",
+    order: "LONG",
     balance: "20%",
   },
   {
     name: "BONK",
-    order: "Long",
+    order: "LONG",
     balance: "10%",
   },
   {
     name: "DOGE",
-    order: "Long",
+    order: "LONG",
     balance: "10%",
   },
   {
     name: "POPCAT",
-    order: "Long",
+    order: "LONG",
     balance: "10%",
   },
   {
     name: "ETH",
-    order: "Short",
+    order: "SHORT",
     balance: "20%",
   },
   {
     name: "DOGS",
-    order: "Short",
+    order: "SHORT",
     balance: "10%",
   },
   {
     name: "FLOKI",
-    order: "Short",
+    order: "SHORT",
     balance: "10%",
   },
   {
     name: "SHIBA",
-    order: "Short",
+    order: "SHORT",
     balance: "10%",
   },
 ];
@@ -49,9 +49,9 @@ const FundCards = ({ id, link, fundBtn, fundLink }) => {
           <img src={link} className="rounded-t-lg xl:w-[450px] xl:h-[480px] lg:w-[430px] lg:h-[430px] md:w-[330px] md:h-[380px] w-[60vw] h-[60vw] max-[500px]:w-[85vw] max-[500px]:h-[85vw]"/>
           <div className="bg-sky-400 xl:w-[450px] lg:w-[430px] md:w-[330px] w-[60vw] max-[500px]:w-[85vw]">
             <div className="flex flex-row justify-around items-center w-full border-b-2 bg-blue-700">
-              <div className="text-center font-bold w-[25%]">Coin</div>
-              <div className="text-center font-bold w-[30%]">Long/Short</div>
-              <div className="text-center font-bold w-[45%]">Allocation,%</div>
+              <div className="text-center font-medium w-[25%]">Coin</div>
+              <div className="text-center font-medium w-[30%]">LONG/SHORT</div>
+              <div className="text-center font-medium w-[45%]">Allocation,%</div>
             </div>
             <div className="flex flex-col justify-around items-center w-full divide-y">
               {fundCoins.map((item, index) => {
