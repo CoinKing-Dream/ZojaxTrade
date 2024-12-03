@@ -6,7 +6,7 @@ const CopyTradingText = ({setIndicateChatbot}) => {
     setIndicateChatbot(true);
     setTimeout(() => {
       setIndicateChatbot(false);
-    }, 4000);
+    }, 5000);
   }
 
   return (

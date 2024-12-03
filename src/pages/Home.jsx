@@ -20,7 +20,7 @@ const Home = () => {
           >
             <img
               src={IndicateImg}
-              className="absolute right-[25px] bottom-[80px] opacity-100 animate-bounce w-[40px] z-50"
+              className="absolute xl:right-[20px] md:right-[25px] sm:right-[27px] right-[23px] bottom-[80px] opacity-100 animate-bounce sm:w-[40px] w-[30px] z-50"
             />
           </div>
         </>
