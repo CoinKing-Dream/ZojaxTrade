@@ -1,7 +1,14 @@
 import GuidePDF from "../assets/Presentation.mp4";
 import FundButton from "../components/FundButton";
 
-const CopyTradingText = () => {
+const CopyTradingText = ({setIndicateChatbot}) => {
+  const displayChatbot = () => {
+    setIndicateChatbot(true);
+    setTimeout(() => {
+      setIndicateChatbot(false);
+    }, 4000);
+  }
+
   return (
     <div className="flex 2xl:w-[49%] w-[100%] flex flex-col z-[11] items-center justify-center">
       <p className="xl:ml-[50px] 2xl:text-[36px] xl:text-[25px] md:text-[30px] sm:text-[25px] text-[15px] text-center 2xl:mt-10 xl:mt-2 text-white font-bold">
@@ -24,7 +31,11 @@ const CopyTradingText = () => {
           >
             presentation
           </a>{" "}
-          and chat here with Dean Powers, the Founder and CEO of{" "}
+          and chat{" "}
+          <a className="underline decoration-dotted underline-offset-4 font-normal" onClick={() => displayChatbot()}>
+            here
+          </a>{" "}
+          with Dean Powers, the Founder and CEO of{" "}
           <a
             href="https://www.zojax.com"
             className="underline decoration-dotted underline-offset-4 font-normal"
@@ -38,8 +49,16 @@ const CopyTradingText = () => {
         </div>
       </p>
       <div className="sm:mt-10 mt-7 md:px-0 px-10 focus:outline-none xl:w-[90%] w-full text-center xl:text-left flex sm:flex-row flex-col xl:justify-around justify-center items-center xl:gap-2 gap-5">
-        <FundButton link={"https://crypto.zojax.com/pro/auth/register/"} title={"Join Our Fund"} text={"Join the Fund"} />
-        <FundButton link={GuidePDF} title={"Presentation"} text={"Presentation"} />
+        <FundButton
+          link={"https://crypto.zojax.com/pro/auth/register/"}
+          title={"Join Our Fund"}
+          text={"Join the Fund"}
+        />
+        <FundButton
+          link={GuidePDF}
+          title={"Presentation"}
+          text={"Presentation"}
+        />
       </div>
     </div>
   );
