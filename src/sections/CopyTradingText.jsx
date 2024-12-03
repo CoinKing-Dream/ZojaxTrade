@@ -45,7 +45,7 @@ const CopyTradingText = ({setIndicateChatbot}) => {
           , LLC.
         </div>
         <div>
-          The minimum investment is $25 and Fund Profits distributed daily.
+          The minimum investment is $25 and Fund Profits distributed monthly.
         </div>
       </p>
       {/* <div className="sm:mt-10 mt-7 md:px-0 px-10 focus:outline-none xl:w-[90%] w-full text-center xl:text-left flex sm:flex-row flex-col xl:justify-around justify-center items-center xl:gap-2 gap-5">
