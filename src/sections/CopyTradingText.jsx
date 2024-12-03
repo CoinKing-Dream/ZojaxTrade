@@ -10,7 +10,7 @@ const CopyTradingText = ({setIndicateChatbot}) => {
   }
 
   return (
-    <div className="flex 2xl:w-[49%] w-[100%] flex flex-col z-[11] items-center justify-center">
+    <div className="flex 2xl:w-[47%] w-[100%] flex flex-col z-[11] items-center justify-center">
       <p className="xl:ml-[50px] 2xl:text-[36px] xl:text-[25px] md:text-[30px] sm:text-[25px] text-[15px] text-center 2xl:mt-10 xl:mt-2 text-white font-bold">
         Dogs Lovers Cryptocurrency Investment Fund
       </p>
@@ -48,7 +48,7 @@ const CopyTradingText = ({setIndicateChatbot}) => {
           The minimum investment is $25 and Fund Profits distributed daily.
         </div>
       </p>
-      <div className="sm:mt-10 mt-7 md:px-0 px-10 focus:outline-none xl:w-[90%] w-full text-center xl:text-left flex sm:flex-row flex-col xl:justify-around justify-center items-center xl:gap-2 gap-5">
+      {/* <div className="sm:mt-10 mt-7 md:px-0 px-10 focus:outline-none xl:w-[90%] w-full text-center xl:text-left flex sm:flex-row flex-col xl:justify-around justify-center items-center xl:gap-2 gap-5">
         <FundButton
           link={"https://crypto.zojax.com/pro/auth/register/"}
           title={"Join Our Fund"}
@@ -59,7 +59,7 @@ const CopyTradingText = ({setIndicateChatbot}) => {
           title={"Presentation"}
           text={"Presentation"}
         />
-      </div>
+      </div> */}
     </div>
   );
 };
