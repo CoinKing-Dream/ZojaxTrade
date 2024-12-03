@@ -60,7 +60,7 @@ const FundCards = ({ id, link, fundBtn, fundLink }) => {
                     key={item.name}
                     className="flex flex-row justify-around items-center w-full"
                   >
-                    <div className="text-center w-[25%] font-bold">{item.name}</div>
+                    <div className="text-center w-[25%]">{item.name}</div>
                     <div className={`text-center w-[30%] ${index<4?"text-teal-800":"text-rose-800"}`}>{item.order}</div>
                     <div className="text-center w-[45%]">{item.balance}</div>
                   </div>
