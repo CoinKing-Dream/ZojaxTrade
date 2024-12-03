@@ -15,13 +15,14 @@ const Home = () => {
       {indicateChatbot && (
         <>
           <div
-            className="absolute w-[100vw] h-[100vh] bg-gray-100 opacity-50 z-50"
+            className="absolute w-[100vw] h-[100vh] bg-gray-100 opacity-30 z-50"
             onClick={() => setIndicateChatbot(false)}
-          ></div>
-          <img
-            src={IndicateImg}
-            className="absolute right-[20px] bottom-[50px] opacity-100 animate-bounce w-[40px] z-50"
-          />
+          >
+            <img
+              src={IndicateImg}
+              className="absolute right-[25px] bottom-[80px] opacity-100 animate-bounce w-[40px] z-50"
+            />
+          </div>
         </>
       )}
       <Header />
