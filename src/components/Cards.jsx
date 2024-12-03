@@ -17,7 +17,7 @@ import rightBrownArrowImg from "../assets/right-brown-arrow.png";
 const Cards = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   return (
-    <div className="relative flex xl:justify-end justify-center 2xl:w-[50%] w-full z-100 2xl:pr-[50px]">
+    <div className="relative flex xl:justify-end justify-center z-100">
       <div className="2xl:w-[500px] xl:w-[400px] lg:w-[500px] md:w-[450px] sm:w-[70vw] w-[65vw]">
         <Swiper
           effect={"cards"}
