@@ -3,6 +3,7 @@ import CopyTradingText from "../sections.jsx/CopyTradingText";
 import Cards from "../components/Cards";
 import Partners from "../components/Partners";
 import GradientImg from "../assets/gradient.svg";
+import RiskImg from "../sections.jsx/RiskImg";
 
 const Home = () => {
   return (
@@ -14,7 +15,10 @@ const Home = () => {
           src={GradientImg}
         />
         <CopyTradingText />
-        <Cards />
+        <div className="2xl:w-[49%] w-full 2xl:h-[550px] lg:h-[400px] flex flex-col justify-end items-center gap-5">
+          <Cards />
+          <RiskImg />
+        </div>
       </div>
       <Partners />
     </div>

@@ -17,10 +17,10 @@ const Partners = () => {
               key={idx}
               className={` ${
                 idx == 1
-                  ? "md:h-[30px] h-[16px]"
+                  ? "md:h-[30px] sm:h-[20px] h-[16px]"
                   : idx == 2
-                  ? "md:h-[50px] h-[30px]"
-                  : "md:h-[80px] h-[40px]"
+                  ? "md:h-[50px] sm:h-[35px] h-[30px]"
+                  : "md:h-[80px] sm:h-[50px] h-[40px]"
               }`}
             />
           ))}

@@ -10,8 +10,8 @@ const Header = () => {
       <div className="flex flex-row justify-between items-end">
         <ZojaxLogo />
         <div className="flex flex-row justify-between items-center sm:gap-2 gap-3 mr-3">
-          <HeaderButton link={"https://www.facebook.com/profile.php?id=61569310988457"} markText={"f"} topText={"Follow us on"} bottomText={"facebook"}/>
-          <HeaderButton link={"https://share.hsforms.com/1q_E7-G2bTAujLieilOzYxg4igy0"} markText={"C"} topText={"Contact us"} bottomText={"Fund Manager"}/>
+          <HeaderButton link={"https://www.facebook.com/profile.php?id=61569310988457"} title={"Follow our Facebook"} markText={"f"} topText={"Follow us on"} bottomText={"facebook"}/>
+          <HeaderButton link={"https://share.hsforms.com/1q_E7-G2bTAujLieilOzYxg4igy0"} title={"Contact Fund Manager"} markText={"C"} topText={"Contact us"} bottomText={"Fund Manager"}/>
         </div>
       </div>
       <DivideLine text={""} />
